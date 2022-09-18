@@ -1,0 +1,57 @@
+@import "./common.scss";
+
+.search-wrapper{
+    @include column-flex;
+    row-gap: 28px;
+
+}
+.input-search{
+    padding-inline: $inline-global;
+    height: 56px;
+    @include center-align;
+    .search-icon{
+        margin-right: 24px;
+    };
+    .global-search{
+        @include full-width-height;
+        @include center-align;
+        position: relative;
+        input{
+            @include full-width-height;
+            font-size: 40px;
+            font-weight: 400;
+            border: none;
+            &:focus{
+                outline: none
+            }
+        };
+        .doted{
+            position: absolute;
+            right: 0;
+            top: 50;
+        }
+    }
+}
+
+.critery-list{
+    display:flex;
+    padding-inline: $inline-global;
+    column-gap: 14px;
+    .critery-box{
+        @include center-align;
+        @include space-beetween;
+        width: 229.5px;
+        height: 62px;
+        background-color: $secondary-black;
+        border-radius: $radius;
+        padding-block: 19px;
+        padding-inline: 18px;
+        color: white;
+        font-size: 14px;
+        line-height: 19.6px;
+        .text-icon{
+            @include center-align;
+            column-gap: 12px;
+        }
+    }
+}

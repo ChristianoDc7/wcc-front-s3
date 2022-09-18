@@ -1,0 +1,83 @@
+@import './common.scss';
+
+.HeaderIcon{
+    height: 108px;
+    padding-block: 24px;
+    padding-inline: $inline-global;
+    background-color: $secondary-gray;
+    width: 100%;
+    @include space-beetween;
+    .icon-container{
+        display: flex;
+        row-gap: 20px;
+        @include full-width-height;
+        @include center-align;
+        .icon-item{
+            width: 60px;
+            height: 60px;
+            @include center-flex;
+            cursor: pointer;
+            border-radius: $radius;
+            @include transitioned;
+        }
+        .active{
+            background-color: $primary-black;
+            path{
+                fill: white;
+            }
+        }
+    }
+    img{
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+}
+.header-text{
+    @include center-align;
+    height: 76px;
+    font-size: 14px;
+    padding-inline: $inline-global;
+
+    ul{
+        display: flex;
+        column-gap: 24px;
+        li{
+            list-style: none;
+            a{
+                color: $text-gray ;
+                text-decoration: none;
+                @include transitioned;
+                position: relative;                             
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: -17px;
+                    left: 30%;
+                    height: 2px;
+                    width: 40px;
+                    background-color: $orange;
+                    transform: scaleX(0);
+                    transform-origin: center;
+                    @include transitioned;
+                }
+                &:hover{
+                    color: $primary-black;
+                    &::after{
+                        transform: scaleX(1);
+                    }
+                }
+            };
+            .first{
+                color: $primary-black;
+                    &::after{
+                        transform: scaleX(1);
+                    }
+            }
+            
+        } 
+        
+        
+        
+    }
+}

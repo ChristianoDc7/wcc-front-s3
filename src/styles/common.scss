@@ -1,0 +1,56 @@
+$primary-black: #292726;
+$secondary-black: #292726;
+$orange: #F49338;
+$yellow: #FFCE31;
+$primary-gray: #777574;
+$secondary-gray:  #F7F5F6;
+$third-gray: #EFEFEF;
+$text-gray: #A0A0A0;
+$radius: 8px;
+$inline-global: 40px;
+
+@font-face {
+    font-family: 'Made Okin';
+    src: url('../../public/made-okine-sans-personal-use/MADEOkineSansPERSONALUSE-Light.otf') format('opentype');
+}
+
+body{
+    font-family: 'Made Okin';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin column-flex{
+    display: flex;
+    flex-direction: column;
+}
+@mixin center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin center-align{
+    display: flex;
+    align-items: center;
+}
+@mixin space-beetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin full-width-height{
+    width: 100%;
+    height: 100%;
+}
+@mixin full-width{
+    width: 100%;
+}
+@mixin full-height{
+    height: 100%;
+}
+@mixin transitioned{
+    transition: all 0.3s ease-in-out;
+}
