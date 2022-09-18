@@ -3,6 +3,7 @@
     Height:100vh;
 }
 .left{
+    overflow-y: scroll;
 
 }
 .right{

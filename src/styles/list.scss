@@ -70,5 +70,21 @@
             }
         }
         
+    };
+    .navigation{
+        @include center-align;
+        column-gap: 2px;
+        .dash{
+            width: 28px;
+            height: 0px;
+            background-color: #C9C5C2;
+            border: 1.5px solid #C9C5C2;
+            
+        };
+        .bl{
+            background-color: $primary-black;
+            border: 1.5px solid $primary-black;
+        }
     }
+    
 }
