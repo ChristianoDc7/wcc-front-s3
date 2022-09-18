@@ -1,1 +1,74 @@
 @import "./common.scss";
+
+.result{
+    padding-inline: $inline-global;
+    padding-block: 18px;
+    @include column-flex;
+    row-gap: 28px;
+    .result-label{
+        @include space-beetween;
+        width: 275px;
+        font-size: 24px;
+        b{
+            font-family: 'Made Okin Bold';
+        };
+        .result-count{
+            width: 42px;
+            height: 25px;
+            border-radius: 4px;
+            font-size: 12px;
+            background-color: $third-gray;
+            @include center-flex;
+        }
+    }
+    .gallery-section{
+        @include space-beetween;
+        .gallery-item{
+            padding: 14px;
+            display: flex;
+            height: 180px;
+            border-radius: $radius;
+            width: 337px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            row-gap: 6px;
+            .price{
+                font-size: 24px;
+                span{
+                    font-size: 12px;
+                }
+            };
+            .title{
+                font-size: 18px;
+            };
+            .addons{
+                @include space-beetween;
+                width: 45%;
+                .rates{
+                    column-gap: 1px;
+                    font-size: 12px;
+                    @include center-align;
+                    line-height: 16.5px;
+                    .rating{
+                        @include center-align;
+                        height: 100%;
+                    }
+                };
+                .location{
+                    @include center-align;
+                    font-size: 12px;
+                    column-gap: 4px
+                }
+            }
+        };
+        @for $i from 1 through 3 {
+            .bgc-#{$i} {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.64) 100%), url("../../public/img/ld-"+$i+".jpg"), #FFFFFF;
+                background-size: cover;
+            }
+        }
+        
+    }
+}

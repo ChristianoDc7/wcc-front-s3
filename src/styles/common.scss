@@ -11,9 +11,16 @@ $inline-global: 40px;
 
 @font-face {
     font-family: 'Made Okin';
-    src: url('../../public/made-okine-sans-personal-use/MADEOkineSansPERSONALUSE-Light.otf') format('opentype');
+    src: url('../../public/made-okine-sans-personal-use/MADEOkineSansPERSONALUSE-Light.otf') format('opentype'),
 }
-
+@font-face{
+    font-family: 'Made Okin Bold';
+    src: url('../../public/made-okine-sans-personal-use/MADEOkineSansPERSONALUSE-Bold.otf') format('opentype'),
+}
+@font-face {
+    font-family: 'Made Okin Medium';
+    src: url('../../public/made-okine-sans-personal-use/MADEOkineSansPERSONALUSE-Regular.otf') format('opentype');
+}
 body{
     font-family: 'Made Okin';
     height: 100%;

@@ -23,7 +23,7 @@ const HeaderNav = () => {
                 <div className='icon-item active' onMouseEnter={(e)=>handleRemove(e,".icon-item","active")}><ShopIcon /></div>
                 <div className='icon-item' onMouseEnter={(e)=>handleRemove(e,".icon-item","active")}><BiheartIcon /></div>
             </div>
-            <img src='/img/pdp.png' alt='logo' className='pdp' />   
+            <img src='/img/pdp.png' alt='logo' className='pdp' />  
         </div>
         <div className='header-text'>
             <ul>
