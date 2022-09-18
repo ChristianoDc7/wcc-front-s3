@@ -1,0 +1,14 @@
+.wrapper{
+    display: flex;
+    Height:100vh;
+}
+.left{
+
+}
+.right{
+    width:54Opx;
+    flex: 1;
+    background-image: url("/public/img/left-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}

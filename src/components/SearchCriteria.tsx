@@ -1,5 +1,5 @@
 import React from 'react'
-import { BoxDoted, BoxedArrowLeft, BoxedArrowRight, BoxedArrowwDown } from '../icons/criteria'
+import { BoxDoted, BoxedArrowLeft, BoxedArrowRight, BoxedArrowwDown, HouseIcon, PeopleGroups, SettingsIcon } from '../icons/criteria'
 import { SearchIcon } from '../icons/navbarIcons'
 
 export const SearchCriteria = () => {
@@ -23,14 +23,34 @@ export const SearchCriteria = () => {
                 <BoxedArrowwDown />
             </div>
             <div className="critery-box">
-                    <div className='text-icon'>
-                        <BoxedArrowRight/>
-                        Check out
-                    </div>
-                    <BoxedArrowwDown />
+                <div className='text-icon'>
+                    <BoxedArrowRight/>
+                    Check out
+                </div>
+                <BoxedArrowwDown />
             </div>
-            <div className="critery-box"></div>
-            <div className="critery-box"></div>
+            <div className="critery-box">
+                <div className='text-icon'>
+                    <PeopleGroups />
+                    Guests
+                </div>
+                <div className='dual-dot'>
+                    <BoxDoted height={"26px"} width={"26px"} />
+                    <BoxDoted height={"26px"} width={"26px"} />
+                </div>
+            </div>
+            <div className="critery-box">
+                <div className='text-icon'>
+                    <HouseIcon />
+                    Rooms
+                </div>
+                <div className='dual-dot'>
+                    <BoxDoted height={"26px"} width={"26px"} />
+                    <BoxDoted height={"26px"} width={"26px"} />
+                </div>
+            </div>
+            <div className="critery-action"><SettingsIcon /></div>
+            <div className="critery-action orange-search"><SearchIcon /></div>
         </div>
     </div>
   )

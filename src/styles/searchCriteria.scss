@@ -37,7 +37,9 @@
     display:flex;
     padding-inline: $inline-global;
     column-gap: 14px;
+    padding-bottom: 19px;
     .critery-box{
+        cursor: pointer;
         @include center-align;
         @include space-beetween;
         width: 229.5px;
@@ -52,6 +54,24 @@
         .text-icon{
             @include center-align;
             column-gap: 12px;
+        };
+        .dual-dot{
+            @include center-align;
+            column-gap: 8px;
+        }
+    };
+    .critery-action{
+        width: 62px;
+        height: 62px;
+        background-color: $primary-black;
+        @include center-flex;
+        border-radius: $radius;
+        cursor: pointer;
+    };
+    .orange-search{
+        background-color: $orange;
+        path{
+            fill: white;
         }
     }
 }

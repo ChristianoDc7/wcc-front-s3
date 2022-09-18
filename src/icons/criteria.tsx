@@ -58,19 +58,8 @@ export const BoxDoted = (props: React.SVGProps<SVGSVGElement>) => (
 )
 
 export const HouseIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-        <g filter="url(#filter0_b_4_249)">
-            <rect x="0.5" width="22" height="22" rx="4" fill="#777574"/>
-            <circle cx="11.5" cy="11" r="3" fill="white"/>
-        </g>
-        <defs>
-        <filter id="filter0_b_4_249" x="-3.5" y="-4" width="30" height="30" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
-            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4_249"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4_249" result="shape"/>
-        </filter>
-        </defs>
+    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path d="M22.6835 11.8359L13.0296 2.18907C12.9601 2.11942 12.8776 2.06417 12.7867 2.02647C12.6958 1.98877 12.5984 1.96936 12.5 1.96936C12.4016 1.96936 12.3041 1.98877 12.2132 2.02647C12.1223 2.06417 12.0398 2.11942 11.9703 2.18907L2.31636 11.8359C2.03511 12.1172 1.87573 12.4992 1.87573 12.8977C1.87573 13.725 2.54839 14.3977 3.37573 14.3977H4.39292V21.2813C4.39292 21.6961 4.72808 22.0313 5.14292 22.0313H11V16.7813H13.625V22.0313H19.857C20.2718 22.0313 20.607 21.6961 20.607 21.2813V14.3977H21.6242C22.0226 14.3977 22.4046 14.2406 22.6859 13.957C23.2695 13.3711 23.2695 12.4219 22.6835 11.8359Z" fill="#777574"/>
     </svg>
     )
 

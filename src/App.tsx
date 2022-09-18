@@ -13,9 +13,12 @@ import { SearchCriteria } from './components/SearchCriteria';
 
 function App() {
   return (
-    <div >
-      <HeaderNav />
-      <SearchCriteria />
+    <div className="wrapper">
+      <div className='left'>
+        <HeaderNav />
+        <SearchCriteria />
+      </div>
+      <div className='right'></div>
     </div>
   );
 }
